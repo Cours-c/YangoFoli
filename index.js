@@ -1,6 +1,9 @@
+import { NavigationContainer } from "@react-navigation/native";
 import { registerRootComponent } from 'expo';
-import HomeScreen from './screens/HomeScreen';
+import MyStack from "./Navigator/StackNavigator";
 function App(){
-    return <HomeScreen/>;
+    return ( <NavigationContainer>
+        <MyStack></MyStack>
+    </NavigationContainer>);
 }
 registerRootComponent(App);
